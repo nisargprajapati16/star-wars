@@ -28,7 +28,7 @@ const UrlGrid = ({ type, header }) => {
     if (urls.length) {
       urls.forEach((url) => fetch(url));
     }
-  }, [urls]);
+  }, [urls, fetch]);
 
   return (
     <div className="App">

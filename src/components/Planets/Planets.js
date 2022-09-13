@@ -43,7 +43,7 @@ function Planets({ customColumns = [], formatFunc = (row) => row }) {
       "population",
       ...customColumns,
     ],
-    values: planetsData.results.map(formatFunc),
+    values: planetsData.results?.length ? planetsData.results.map(formatFunc) : [],
     actions: [
       {
         label: "Create Planet",
