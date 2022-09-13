@@ -48,7 +48,7 @@ const CreatePlanet = ({ isOpen, toggle }) => {
     diameter: "",
     climate: "",
     gravity: "",
-    terrain: "na",
+    terrain: "",
     surface_water: "",
   });
 
@@ -154,7 +154,6 @@ const CreatePlanet = ({ isOpen, toggle }) => {
           </Button>
         </Form>
       </ModalBody>
-      <ModalFooter></ModalFooter>
     </Modal>
   );
 };
